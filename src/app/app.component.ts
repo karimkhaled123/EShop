@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedContent = 'recipes';
   title = 'EShop';
+  onNavSelected(pageName: string) {
+    this.selectedContent = pageName;
+  }
 }
